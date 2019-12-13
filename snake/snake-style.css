@@ -38,7 +38,7 @@ body {
 	width: 100%;
 	z-index: 20;
 	overflow: auto;
-	display: none;
+	display: block;
 }
 
 #modal-container {
@@ -75,6 +75,10 @@ h3 {
     cursor: pointer;
     margin: 30px;
     font-family: 'Orbitron', sans-serif;
+}
+
+#play-again {
+    display: none;
 }
 
 #score-board {

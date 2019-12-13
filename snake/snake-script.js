@@ -3,8 +3,17 @@ const modal = document.querySelector('#modal')
 
 const currentScoreBox = document.querySelector('#current-score')
 const highScoreBox = document.querySelector('#high-score')
+const oops = document.querySelector('h1')
 const modalScore = document.querySelector('h2')
 const modalHighScore = document.querySelector('h3')
+const startGame = document.querySelector('#start')
+startGame.addEventListener('click', evt => {
+    startGame.style.display = 'none'
+    resetButton.style.display = 'inline-block'
+    oops.textContent = 'Oops! Looks like you took a wrong turn . . .'
+    modal.style.display = 'none'
+})
+
 
 const resetButton = document.querySelector('#play-again')
 resetButton.addEventListener('click', resetBoard)

@@ -1,6 +1,17 @@
 const gameBoard = document.querySelector('#game-board')
 const modal = document.querySelector('#modal')
 const message = document.querySelector('h2')
+const boom = document.querySelector('h1')
+const playAgain = document.querySelector('#play-again')
+const startGame = document.querySelector('#start')
+startGame.addEventListener('click', evt => {
+    enemyOne.randNumber()
+    setTimeout(() => enemyTwo.randNumber(), 10)
+    setTimeout(() => enemyThree.randNumber(), 20)
+    playAgain.style.display = 'inline-block'
+    modal.style.display = 'none'
+    startGame.style.display = 'none'
+})
 
 let boxes = []
 let stone = []
@@ -115,15 +126,12 @@ function createBoard () {
 
 let enemyOne = new Enemy('white', 13, 13)
 enemyOne.appendSprite()
-enemyOne.randNumber()
 
 let enemyTwo = new Enemy('white', 13, 1)
 setTimeout(() => enemyTwo.appendSprite(), 10)
-setTimeout(() => enemyTwo.randNumber(), 10)
 
 let enemyThree = new Enemy('white', 1, 13)
 setTimeout(() => enemyThree.appendSprite(), 20)
-setTimeout(() => enemyThree.randNumber(), 20)
 
 function checkForFire () {
     for (let check = 0; check < isFire.length; check++) {
@@ -171,6 +179,7 @@ function checkForFire () {
 }
 
 function showModal () {
+    boom.textContent = 'BOOM!'
     modal.style.display = 'block'
     if (playerDead) {
         message.textContent = 'Oh well. Try again?'

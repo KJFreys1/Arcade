@@ -1413,8 +1413,7 @@ class Enemy {
                 routeOne = 5
             }
         }
-        if (safeRoute) {
-            
+        if (safeRoute) {          
             this.placeBombDown()
             setTimeout(() => this.moveRoute(y1, x1), 500)
             setTimeout(() => this.moveRoute(y2, x2), 1000)
