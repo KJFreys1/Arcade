@@ -242,7 +242,7 @@ class Enemy {
             if (routeOne == 1) {
                 if (stone[this.yPos-1][this.xPos] || brick[this.yPos-1][this.xPos] || isBomb[this.yPos-1][this.xPos] || isSprite[this.yPos-1][this.xPos]) {
                     simCount++
-                    console.log(simCount)
+                    
                 } else {
                     
                     y1 = this.yPos-1
@@ -251,7 +251,7 @@ class Enemy {
                         if (routeTwo == 1) {
                             if (stone[y1-1][x1] || brick[y1-1][x1] || isBomb[y1-1][x1] || isSprite[y1-1][x1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1-1
@@ -263,7 +263,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -275,7 +275,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -287,7 +287,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -299,7 +299,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -320,7 +320,7 @@ class Enemy {
                         } else if (routeTwo == 2) {
                             if (stone[y1+1][x1] || brick[y1+1][x1] || isBomb[y1+1][x1] || isSprite[y1+1][x1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1+1
@@ -332,7 +332,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -344,7 +344,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -356,7 +356,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -368,7 +368,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -389,7 +389,7 @@ class Enemy {
                         } else if (routeTwo == 3) {
                             if (stone[y1][x1-1] || brick[y1][x1-1] || isBomb[y1][x1-1] || isSprite[y1][x1-1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1
@@ -401,7 +401,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -413,7 +413,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -425,7 +425,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else { 
                                                 
                                                 y3 = y2
@@ -437,7 +437,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -458,7 +458,7 @@ class Enemy {
                         } else {
                             if (stone[y1][x1+1] || brick[y1][x1+1] || isBomb[y1][x1+1] || isSprite[y1][x1+1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1
@@ -470,7 +470,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -482,7 +482,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -494,7 +494,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -506,7 +506,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -533,7 +533,7 @@ class Enemy {
             } else if (routeOne == 2) {
                 if (stone[this.yPos+1][this.xPos] || brick[this.yPos+1][this.xPos] || isBomb[this.yPos+1][this.xPos] || isSprite[this.yPos+1][this.xPos]) {
                     simCount++
-                    console.log(simCount)
+                    
                 } else {
                     
                     y1 = this.yPos+1
@@ -542,7 +542,7 @@ class Enemy {
                         if (routeTwo == 1) {
                             if (stone[y1-1][x1] || brick[y1-1][x1] || isBomb[y1-1][x1] || isSprite[y1-1][x1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1-1
@@ -554,7 +554,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -566,7 +566,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -578,7 +578,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -590,7 +590,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -611,7 +611,7 @@ class Enemy {
                         } else if (routeTwo == 2) {
                             if (stone[y1+1][x1] || brick[y1+1][x1] || isBomb[y1+1][x1] || isSprite[y1+1][x1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1+1
@@ -623,7 +623,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -635,7 +635,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -647,7 +647,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -659,7 +659,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -680,14 +680,11 @@ class Enemy {
                         } else if (routeTwo == 3) {
                             if (stone[y1][x1-1] || brick[y1][x1-1] || isBomb[y1][x1-1] || isSprite[y1][x1-1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1
                                 x2 = x1-1
-                                console.log(y2, x2)
-                                console.log(y1, this.yPos)
-                                console.log(isDanger[12][13])
                                 if (!isDanger[y2][x2]) {
                                     
                                     safeRoute = true
@@ -696,7 +693,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -708,7 +705,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -720,7 +717,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -732,7 +729,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -753,7 +750,7 @@ class Enemy {
                         } else {
                             if (stone[y1][x1+1] || brick[y1][x1+1] || isBomb[y1][x1+1] || isSprite[y1][x1+1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1
@@ -765,7 +762,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -777,7 +774,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -789,7 +786,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -801,7 +798,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -828,7 +825,7 @@ class Enemy {
             } else if (routeOne == 3) {
                 if (stone[this.yPos][this.xPos-1] || brick[this.yPos][this.xPos-1] || isBomb[this.yPos][this.xPos-1] || isSprite[this.yPos][this.xPos-1]) {
                     simCount++
-                    console.log(simCount)
+                    
                 } else {
                     
                     y1 = this.yPos
@@ -837,7 +834,7 @@ class Enemy {
                         if (routeTwo == 1) {
                             if (stone[y1-1][x1] || brick[y1-1][x1] || isBomb[y1-1][x1] || isSprite[y1-1][x1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1-1
@@ -849,7 +846,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -861,7 +858,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -873,7 +870,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -885,7 +882,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -906,7 +903,7 @@ class Enemy {
                         } else if (routeTwo == 2) {
                             if (stone[y1+1][x1] || brick[y1+1][x1] || isBomb[y1+1][x1] || isSprite[y1+1][x1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1+1
@@ -918,7 +915,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -930,7 +927,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -942,7 +939,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -954,7 +951,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -975,7 +972,7 @@ class Enemy {
                         } else if (routeTwo == 3) {
                             if (stone[y1][x1-1] || brick[y1][x1-1] || isBomb[y1][x1-1] || isSprite[y1][x1-1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1
@@ -987,7 +984,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -999,7 +996,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -1011,7 +1008,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1023,7 +1020,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1044,7 +1041,7 @@ class Enemy {
                         } else {
                             if (stone[y1][x1+1] || brick[y1][x1+1] || isBomb[y1][x1+1] || isSprite[y1][x1+1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1
@@ -1056,7 +1053,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -1068,7 +1065,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -1080,7 +1077,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1092,7 +1089,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1120,7 +1117,7 @@ class Enemy {
             } else {
                 if (stone[this.yPos][this.xPos+1] || brick[this.yPos][this.xPos+1] || isBomb[this.yPos][this.xPos+1] || isSprite[this.yPos][this.xPos+1]) {
                     simCount++
-                    console.log(simCount)
+                    
                 } else {
                     
                     y1 = this.yPos
@@ -1129,7 +1126,7 @@ class Enemy {
                         if (routeTwo == 1) {
                             if (stone[y1-1][x1] || brick[y1-1][x1] || isBomb[y1-1][x1] || isSprite[y1-1][x1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1-1
@@ -1141,7 +1138,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -1153,7 +1150,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -1165,7 +1162,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1177,7 +1174,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1198,7 +1195,7 @@ class Enemy {
                         } else if (routeTwo == 2) {
                             if (stone[y1+1][x1] || brick[y1+1][x1] || isBomb[y1+1][x1] || isSprite[y1+1][x1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1+1
@@ -1210,7 +1207,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -1222,7 +1219,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -1234,7 +1231,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1246,7 +1243,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1267,7 +1264,7 @@ class Enemy {
                         } else if (routeTwo == 3) {
                             if (stone[y1][x1-1] || brick[y1][x1-1] || isBomb[y1][x1-1] || isSprite[y1][x1-1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1
@@ -1279,7 +1276,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -1291,7 +1288,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -1303,7 +1300,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1315,7 +1312,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1336,7 +1333,7 @@ class Enemy {
                         } else {
                             if (stone[y1][x1+1] || brick[y1][x1+1] || isBomb[y1][x1+1] || isSprite[y1][x1+1]) {
                                 simCount++
-                                console.log(simCount)
+                                
                             } else {
                                 
                                 y2 = y1
@@ -1348,7 +1345,7 @@ class Enemy {
                                         if (routeThree == 1) {
                                             if (stone[y2-1][x2] || brick[y2-1][x2] || isBomb[y2-1][x2] || isSprite[y2-1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2-1
@@ -1360,7 +1357,7 @@ class Enemy {
                                         } else if (routeThree == 2) {
                                             if (stone[y2+1][x2] || brick[y2+1][x2] || isBomb[y2+1][x2] || isSprite[y2+1][x2]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2+1
@@ -1372,7 +1369,7 @@ class Enemy {
                                         } else if (routeThree == 3) {
                                             if (stone[y2][x2-1] || brick[y2][x2-1] || isBomb[y2][x2-1] || isSprite[y2][x2-1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2
@@ -1384,7 +1381,7 @@ class Enemy {
                                         } else {
                                             if (stone[y2][x2+1] || brick[y2][x2+1] || isBomb[y2][x2+1] || isSprite[y2][x2+1]) {
                                                 simCount++
-                                                console.log(simCount)
+                                                
                                             } else {
                                                 
                                                 y3 = y2

@@ -26,6 +26,10 @@ body {
     margin: 20px auto;
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
 #green {
     grid-row: 1;
     grid-column: 1;
